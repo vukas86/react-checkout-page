@@ -1,0 +1,101 @@
+:root {
+  --main-border-bottom: 10px groove rgba(199, 186, 172, 0.59);
+  --main-margin-bottom: 8px;
+}
+
+.cartInfo {
+  border: 1px solid grey;
+  width: 700px;
+  padding: 10px;
+  background-color: #d2d6da;
+}
+
+img {
+  height: 90px;
+}
+.cartItemsContainer {
+  border-bottom: var(--main-border-bottom);
+}
+
+.cartItems {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: var(--main-margin-bottom);
+}
+.cartItems p {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.details {
+  margin-top: 0;
+}
+.voucherForm {
+  /* margin: 0 auto; */
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: var(--main-border-bottom);
+}
+
+.voucherForm button {
+  padding: 9px;
+  border: 1px solid grey;
+  border-left: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* height: 14px; */
+}
+
+.voucherForm button:hover {
+  color: white;
+  background-color: black;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.errorSection {
+  left: 50%;
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  background: rgb(233, 224, 224);
+  color: red;
+  font-size: 36px;
+  margin: 0 auto;
+}
+
+.errorSection p {
+  text-align: center;
+  line-height: 150px;
+}
+
+.spinner {
+  top: 50%;
+  position: absolute;
+  margin: 0 auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #474bff);
+  animation: spinner-zp9dbg 1s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+  to {
+    transform: rotate(1turn);
+  }
+}

@@ -1,0 +1,117 @@
+:root {
+  --main-input-width: 240px;
+}
+
+input {
+  line-height: 30px;
+}
+
+.payement {
+  background-color: white;
+  padding: 10px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.payement h4 {
+  font-size: 32px;
+}
+.ccInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.ccInfo input {
+  margin-top: 5px;
+}
+.ccInfo label {
+  font-weight: bold;
+}
+
+.ccImg {
+  height: 20px;
+  margin: 8px;
+}
+
+.names {
+  display: flex;
+  /* justify-content: space-evenly; */
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.scnd {
+  margin-left: 30px;
+}
+
+.names div {
+  display: flex;
+  flex-direction: column;
+}
+
+.names div input {
+  width: var(--main-input-width);
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.address input {
+  width: 520px;
+}
+
+.cityAddress {
+  display: flex;
+  margin: 10px;
+}
+
+.cityAddress div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cityAddress div input {
+  width: var(--main-input-width);
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.btn {
+  text-align: center;
+  margin: 20px;
+}
+
+.orderBtn {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: dodgerblue;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.orderBtn:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 144, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.orderBtn:active {
+  transform: translate(0em, 0.2em);
+}
+
+.errorMsg {
+  color: rgba(247, 73, 4, 0.929);
+}
