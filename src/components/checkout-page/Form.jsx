@@ -1,4 +1,3 @@
-import React from "react";
 import useInputs from "../../hooks/use-inputs";
 
 import amexPic from "../../assets/images/amex.svg";
@@ -82,16 +81,16 @@ function Form(props) {
   const submitHandler = (e) => {
     e.preventDefault();
     if (!formIsValid) return;
-    console.log(
-      JSON.stringify({
-        CCNumber: enteredCCNumber,
-        FirstName: enteredFirstName,
-        LastName: enteredLastName,
-        Address: enteredAddress,
-        ZipNumber: enteredZipNumber,
-        City: enteredCity,
-      })
-    );
+
+    props.onConfirm({
+      ccNumber: enteredCCNumber,
+      firstName: enteredFirstName,
+      lastName: enteredLastName,
+      address: enteredAddress,
+      zipNumber: enteredZipNumber,
+      city: enteredCity,
+    });
+
     resetCCNumberInput();
     resetFirstNameInput();
     resetLastNameInput();
