@@ -9,3 +9,20 @@ h2 {
 .page {
   display: flex;
 }
+
+.submittContainer {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  width: 500px;
+  height: 150px;
+  padding: 5px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.submittContainer p {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
